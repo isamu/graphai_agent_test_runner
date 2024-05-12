@@ -20,7 +20,13 @@ import yourAgent from "./your_agent";
   await agentTestRunner(sampleAgent);
 ```
 
-edit your agent (src/your_agent.ts)
+edit your agent (src/your_agent.ts).
+
+run test
+
+```
+yarn run test
+```
 
 
 
