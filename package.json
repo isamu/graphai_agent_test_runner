@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc && tsc-alias",
-    "eslint": "eslint",
+    "lint": "eslint",
     "format": "prettier --write '{src,test_yaml,samples}/**/*.{yaml,ts,json}'",
     "test": "node --test  -r tsconfig-paths/register --require ts-node/register ./src/test_*.ts"
   },
