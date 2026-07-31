@@ -1,0 +1,27 @@
+{
+  "$schema": "https://unpkg.com/knip@6/schema.json",
+  // This is a scaffold repo: src/test_*.ts is the `node --test` target from the "test" script
+  // (the runner scripts a user adds), and src/sample_agent.ts is the template agent the repo
+  // exists to provide (README: `cp src/sample_agent.ts src/your_agent.ts`). Both are entry
+  // points, not analyzed dead code. There is no src/index.ts and package.json "main" is a
+  // vestigial "index.js", so knip auto-detects no default entry — the entries are listed here.
+  "entry": ["src/test_*.ts", "src/sample_agent.ts"],
+  "project": ["src/**/*.ts"],
+  "ignoreExportsUsedInFile": true,
+  "includeEntryExports": false,
+  "rules": {
+    // Warn mode: every rule is "warn" (reported, exit 0) or "off". Nothing gates CI here.
+    "files": "warn",
+    "dependencies": "warn",
+    "devDependencies": "warn",
+    "unlisted": "warn",
+    "exports": "warn",
+    "types": "warn",
+    "unresolved": "off",
+    "binaries": "off",
+    "nsExports": "off",
+    "nsTypes": "off",
+    "enumMembers": "off",
+    "duplicates": "off",
+  },
+}
